@@ -1,0 +1,13 @@
+mat-card {
+    width: min-content;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-actions {
+    display: flex;
+    flex-direction: column;
+}

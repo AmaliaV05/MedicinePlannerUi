@@ -1,0 +1,11 @@
+<div *ngIf="medicines" class="medicines">
+    <div *ngFor="let medicine of medicines">
+        <mat-card class="medicine-card" routerLink="/medicines/{{medicine.id}}">
+            <mat-card-title>{{medicine.name}}</mat-card-title>
+            <mat-card-subtitle>{{medicine.plannings[0]?.startDate | date}} - {{medicine.plannings[0]?.endDate | date}}</mat-card-subtitle>
+            <mat-card-content>
+                <div>{{medicine.stock.total}} pills</div>                
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

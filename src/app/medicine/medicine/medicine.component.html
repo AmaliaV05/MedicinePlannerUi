@@ -1,0 +1,16 @@
+
+<button mat-icon-button aria-label="Edit medicine">
+    <mat-icon>edit</mat-icon>
+</button>
+
+<mat-card>
+    <mat-card-title>{{medicine.name}}</mat-card-title>
+    <mat-card-subtitle>{{medicine.plannings[0]?.startDate | date}} - {{medicine.plannings[0]?.endDate | date}}</mat-card-subtitle>
+    <mat-card-content>
+        <button mat-button>Expiration date: {{medicine.expirationDate | date}}</button>
+        <button mat-button>Pills: {{medicine.stock.total}}</button>
+    </mat-card-content>
+    <mat-card-actions>      
+      <button mat-button>Save</button>
+    </mat-card-actions>
+  </mat-card>

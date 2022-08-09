@@ -1,0 +1,10 @@
+.medicines {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.medicine-card {
+    margin: 20px;
+    min-width: 200px;
+    cursor: pointer;
+}
